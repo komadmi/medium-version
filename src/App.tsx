@@ -1,14 +1,8 @@
-import React from 'react';
+import React from "react";
+import Version from "./version.component";
 
 function App() {
-  return (
-    <div className="App">
-      {
-			//@ts-ignore
-			`Version: ${VERSION}`
-			}
-    </div>
-  );
+  return <Version />;
 }
 
 export default App;
