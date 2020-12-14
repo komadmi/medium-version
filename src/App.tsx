@@ -1,13 +1,10 @@
 import React from "react";
 
+declare const VERSION: string; 
+
 function App() {
   return (
-    <div>
-      {
-        //@ts-ignore
-        `Version: ${VERSION}`
-      }
-    </div>
+    <div>{`Version: ${VERSION}`}</div>
   );
 }
 
