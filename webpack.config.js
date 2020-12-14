@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-var webpack = require('webpack');
+var webpack = require("webpack");
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -38,8 +38,8 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "./src/index.css",
     }),
-	new webpack.DefinePlugin({
-      VERSION: JSON.stringify(require("./package.json").version)
+    new webpack.DefinePlugin({
+      VERSION: JSON.stringify(require("./package.json").version),
     }),
   ],
 };
